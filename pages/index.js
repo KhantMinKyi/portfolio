@@ -227,7 +227,7 @@ export default function Home() {
                   What Can I Offer You
                 </motion.h1>
               </div>
-              <div className="md:flex gap-14 my-12 ">
+              <div className="md:flex gap-14 my-12 justify-center">
                 {/* responsive Design */}
                 <motion.div
                   className="text-center shadow-lg rounded-lg p-10 mx-4 md:ms-2 hover:shadow-gray-300 dark:bg-teal-800 dark:bg-opacity-50 dark:hover:shadow-teal-950"
