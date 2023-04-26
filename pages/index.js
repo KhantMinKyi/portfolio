@@ -101,7 +101,7 @@ export default function Home() {
 
               <div className="grid md:grid-cols-2 text-center my-6  md:py-12 py-6 bg-gray-50 dark:bg-teal-900 dark:text-white ">
                 <div className="w-60 h-60 mx-auto rounded-full overflow-hidden animate-fade my-4">
-                  <Image src={profile} alt="Image" />
+                  <Image src={profile} alt="Image" priority />
                 </div>
                 <motion.div
                   initial={{ x: "100%" }}
@@ -241,7 +241,7 @@ export default function Home() {
                 >
                   <Image
                     src={design}
-                    width={150}
+                    width={"auto"}
                     height={150}
                     className="mx-auto hover:scale-110"
                     alt="Image"
@@ -263,7 +263,7 @@ export default function Home() {
                   <Image
                     alt="Image"
                     src={code}
-                    width={150}
+                    width={"auto"}
                     height={150}
                     className="mx-auto hover:scale-110"
                   />
@@ -301,8 +301,8 @@ export default function Home() {
                   <Image
                     alt="Image"
                     src={qa}
-                    width={150}
-                    height={150}
+                    width={"auto"}
+                    height={"150"}
                     className="mx-auto hover:scale-110"
                   />
                   <h2 className="font-RalewaySemiBold mt-4 mb-4 text-lg md:text-xl dark:text-gray-200">
