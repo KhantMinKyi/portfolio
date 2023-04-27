@@ -1,11 +1,18 @@
 import Head from "next/head";
 
-import { BsFillMoonStarsFill, BsHandThumbsUp } from "react-icons/bs";
+import {
+  BsFillMoonStarsFill,
+  BsHandThumbsUp,
+  BsPersonHearts,
+  BsFillPuzzleFill,
+  BsEmojiSmile,
+} from "react-icons/bs";
 import {
   AiFillFacebook,
   AiFillGithub,
   AiFillInstagram,
   AiFillMail,
+  AiOutlineLaptop,
 } from "react-icons/ai";
 import Image from "next/image";
 import profile from "../public/profile.jpg";
@@ -21,7 +28,7 @@ import website6 from "../public/website6.png";
 import { useEffect, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { motion, useScroll } from "framer-motion";
-
+import Banner from "./Banner";
 export default function Home() {
   const [darkMode, SetDarkMode] = useState(false);
   const [loader, setLoader] = useState(true);
@@ -60,46 +67,46 @@ export default function Home() {
             />
             <link rel="icon" href="/favicon.ico" />
           </Head>
-          <main className="bg-gradient-to-br dark:from-teal-800 dark:to-teal-900">
-            <section className="min-h-50">
-              {/* nav Bar */}
-              <nav className="flex justify-between px-5 pt-5 md:px-14 lg:px-20 ">
-                <h1
-                  className="text-lg font-bold font-RalewayThin dark:text-white hover:cursor-pointer"
-                  onClick={() => (window.location.href = "/")}
-                >
-                  Khant Min Kyi
-                </h1>
 
-                <ul className="flex items-center font-RalewayLight text-teal-500 dark:text-white">
-                  <li></li>
-                  <li>
-                    <a className="mx-3 md:mx-6" href="#about">
-                      About
-                    </a>
-                  </li>
-                  <li>
-                    <a className="mx-3 md:mx-6" href="#skill">
-                      Skill
-                    </a>
-                  </li>
-                  <li>
-                    <a className="mx-3 md:mx-6" href="#portfolio">
-                      Portfolio
-                    </a>
-                  </li>
-                  <li>
-                    <BsFillMoonStarsFill
-                      onClick={() => SetDarkMode(!darkMode)}
-                      className="cursor-pointer text-gray-600 dark:text-yellow-400"
-                    />
-                  </li>
-                  <li></li>
-                </ul>
-              </nav>
+          <main className="bg-gradient-to-br dark:from-teal-800 dark:to-teal-900 ">
+            {/* nav Bar */}
+            <nav className="flex justify-between fixed w-screen z-10 top-0 py-8 px-5 pt-6 md:px-14 lg:px-20 bg-white dark:bg-teal-900">
+              <h1
+                className="text-md md:text-xl font-bold font-RalewayThin dark:text-white hover:cursor-pointer"
+                onClick={() => (window.location.href = "#")}
+              >
+                Khant Min Kyi
+              </h1>
+
+              <ul className="flex items-center text-sm md:text-lg font-RalewayLight text-teal-500 dark:text-white">
+                <li></li>
+                <li>
+                  <a className="mx-3 md:mx-6" href="#about">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a className="mx-3 md:mx-6" href="#skill">
+                    Skill
+                  </a>
+                </li>
+                <li>
+                  <a className="mx-3 md:mx-6" href="#portfolio">
+                    Portfolio
+                  </a>
+                </li>
+                <li>
+                  <BsFillMoonStarsFill
+                    onClick={() => SetDarkMode(!darkMode)}
+                    className="mx-3 md:mx-6 cursor-pointer text-gray-600 dark:text-yellow-400"
+                  />
+                </li>
+                <li></li>
+              </ul>
+            </nav>
+            <section className="min-h-50 mt-16">
               {/* Banner */}
-
-              <div className="grid md:grid-cols-2 text-center my-6  md:py-12 py-6 bg-gray-50 dark:bg-teal-900 dark:text-white ">
+              <div className="grid md:grid-cols-2 text-center mb-6  md:py-12 py-6 bg-gray-50 dark:bg-teal-950 dark:text-white ">
                 <div className="w-60 h-60 mx-auto rounded-full overflow-hidden animate-fade my-4">
                   <Image src={profile} alt="Image" priority />
                 </div>
@@ -122,7 +129,7 @@ export default function Home() {
                     speed={70}
                     repeat={Infinity}
                     wrapper="span"
-                    className="text-4xl md:text-5xl font-RalewayLight text-teal-500 mt-10 dark:text-white"
+                    className="text-4xl md:text-5xl font-RalewaySemiBold text-teal-500 mt-10 dark:text-white"
                   />
                   <h2 className="text-xl font-RalewayThin mt-3">
                     Professional Web Developer
@@ -230,7 +237,7 @@ export default function Home() {
               <div className="md:flex gap-14 my-12 justify-center">
                 {/* responsive Design */}
                 <motion.div
-                  className="text-center shadow-lg rounded-lg p-10 mx-4 md:ms-2 hover:shadow-gray-300 dark:bg-teal-800 dark:bg-opacity-50 dark:hover:shadow-teal-950"
+                  className="text-center shadow-lg my-6 rounded-lg p-10 mx-4 md:ms-2 hover:shadow-gray-300 dark:bg-teal-800 dark:bg-opacity-50 dark:hover:shadow-teal-950"
                   initial="hidden"
                   whileInView="visible"
                   transition={{ duration: 0.9 }}
@@ -259,7 +266,7 @@ export default function Home() {
                   <p className="text-gray-600 dark:text-gray-200 py-1">Figma</p>
                 </motion.div>
                 {/* backend Coder */}
-                <div className="text-center shadow-lg rounded-lg p-10 mx-4 hover:shadow-gray-300 dark:bg-teal-800 dark:bg-opacity-50 dark:hover:shadow-teal-950">
+                <div className="text-center shadow-lg rounded-lg my-6 p-10 mx-4 hover:shadow-gray-300 dark:bg-teal-800 dark:bg-opacity-50 dark:hover:shadow-teal-950">
                   <Image
                     alt="Image"
                     src={code}
@@ -289,7 +296,7 @@ export default function Home() {
                 </div>
                 {/* QA */}
                 <motion.div
-                  className="text-center shadow-lg rounded-lg p-10  mx-4 md:me-2 hover:shadow-gray-300 dark:bg-teal-800 dark:bg-opacity-50 dark:hover:shadow-teal-950"
+                  className="text-center shadow-lg rounded-lg my-6 p-10  mx-4 md:me-2 hover:shadow-gray-300 dark:bg-teal-800 dark:bg-opacity-50 dark:hover:shadow-teal-950"
                   initial="hidden"
                   whileInView="visible"
                   transition={{ duration: 0.9 }}
@@ -318,6 +325,69 @@ export default function Home() {
                 </motion.div>
               </div>
             </motion.section>
+
+            {/* Banner Section */}
+            <section>
+              <div
+                style={{ height: "375px", overflowY: "scroll" }}
+                className="bannerDiv"
+              >
+                <Banner className="bg-teal-100 dark:bg-teal-950">
+                  <div className="my-auto dark:text-white">
+                    <h1 className="text-4xl font-RalewayBold mt-10">
+                      Team <b className="text-teal-400"> Work</b>
+                    </h1>
+                    <h6 className="font-RalewayItalic text-lg mt-10">
+                      Love To Work Group Projects . Actively Participate With
+                      Team
+                    </h6>
+                    <h5 className="flex gap-4 items-center text-xl font-RalewayBold mt-10">
+                      Active Coder <AiOutlineLaptop />
+                    </h5>
+                  </div>
+                </Banner>
+                <Banner className="bg-teal-400 dark:bg-gray-950">
+                  <div className="my-auto dark:text-gray-50">
+                    <h1 className="text-4xl font-RalewayBold mt-10">
+                      Brain
+                      <b className="text-teal-100 dark:text-teal-300">
+                        Storming
+                      </b>
+                    </h1>
+                    <h6 className="font-RalewayItalic text-lg mt-10">
+                      As a Backend Coder , Would Love To Think And Make
+                      <b className="text-white dark:text-teal-300">
+                        A New Systematic and Creative Idea
+                      </b>
+                      For Development
+                    </h6>
+                    <h5 className="flex gap-4 items-center text-xl font-RalewayBold mt-10">
+                      Systematic Engineer <BsFillPuzzleFill />
+                    </h5>
+                  </div>
+                </Banner>
+                <Banner className="bg-teal-200 dark:bg-emerald-950">
+                  <div className="my-auto dark:text-gray-100">
+                    <h1 className="text-3xl font-RalewayBold mt-10">
+                      Progressive
+                      <b className="text-lime-800 dark:text-lime-300">
+                        Learning
+                      </b>
+                    </h1>
+                    <h6 className="font-RalewayItalic text-md mt-10">
+                      I'm A Progressive Learner !{" "}
+                      <b className="text-teal-800 dark:text-lime-200">
+                        Explore , Research , Creative .
+                      </b>
+                    </h6>
+                    <h5 className="flex gap-4 items-center text-xl font-RalewayBold mt-10">
+                      Flexible Developer <BsEmojiSmile />
+                    </h5>
+                  </div>
+                </Banner>
+              </div>
+            </section>
+            {/* Portfolio */}
             <section id="portfolio">
               <h1 className="font-RalewayLight text-xl text-teal-500 text-center my-6">
                 My Portfolios
