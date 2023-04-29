@@ -104,7 +104,7 @@ export default function Home() {
                 <li></li>
               </ul>
             </nav>
-            <section className="min-h-50 mt-16">
+            <section className="min-h-50 mt-20">
               {/* Banner */}
               <div className="grid md:grid-cols-2 text-center mb-6  md:py-12 py-6 bg-gray-50 dark:bg-teal-950 dark:text-white ">
                 <div className="w-60 h-60 mx-auto rounded-full overflow-hidden animate-fade my-4">
@@ -466,7 +466,7 @@ export default function Home() {
           />
           <footer className="bg-gray-50 dark:bg-teal-800">
             <div className="text-center">
-              <h1 className="font-RalewayThin text-xl md:text-2xl py-6 md:py-12 dark:text-teal-500">
+              <h1 className="font-RalewayThin text-xl md:text-2xl py-10 md:py-14 dark:text-teal-500">
                 Developed By KMK{" "}
               </h1>
             </div>
