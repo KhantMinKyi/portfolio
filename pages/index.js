@@ -3,7 +3,7 @@ import Head from "next/head";
 import {
   BsFillMoonStarsFill,
   BsHandThumbsUp,
-  BsPersonHearts,
+  BsSunFill,
   BsFillPuzzleFill,
   BsEmojiSmile,
 } from "react-icons/bs";
@@ -78,7 +78,7 @@ export default function Home() {
                 Khant Min Kyi
               </h1>
 
-              <ul className="flex items-center text-sm md:text-lg font-RalewayLight text-teal-500 dark:text-white">
+              <ul className="flex items-center text-sm md:text-lg font-RalewayItalic text-teal-600 dark:text-white">
                 <li></li>
                 <li>
                   <a className="mx-3 md:mx-6" href="#about">
@@ -95,11 +95,18 @@ export default function Home() {
                     Portfolio
                   </a>
                 </li>
-                <li>
-                  <BsFillMoonStarsFill
-                    onClick={() => SetDarkMode(!darkMode)}
-                    className="mx-3 md:mx-6 cursor-pointer text-gray-600 dark:text-yellow-400"
-                  />
+                <li className=" border-green-900 dark:border-teal-400 rounded-2xl text-sm md:text-lg bg-gray-800 dark:bg-teal-950  p-2">
+                  {darkMode ? (
+                    <BsSunFill
+                      onClick={() => SetDarkMode(!darkMode)}
+                      className="  cursor-pointer text-cyan-300 dark:text-yellow-400"
+                    />
+                  ) : (
+                    <BsFillMoonStarsFill
+                      onClick={() => SetDarkMode(!darkMode)}
+                      className=" cursor-pointer text-cyan-300 dark:text-gray-400 "
+                    />
+                  )}
                 </li>
                 <li></li>
               </ul>
