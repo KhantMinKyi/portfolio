@@ -410,7 +410,17 @@ export default function Home() {
                   hidden: { opacity: 0, y: 100 },
                 }}
               >
-                <div className="basis-1/4 flex-1 p-4">
+                <motion.div
+                  className="basis-1/4 flex-1 p-4"
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  transition={{ duration: 1 }}
+                  variants={{
+                    visible: { opacity: 1, y: 0 },
+                    hidden: { opacity: 0, y: 100 },
+                  }}
+                >
                   <Image
                     alt="Image"
                     src={website1}
@@ -418,8 +428,18 @@ export default function Home() {
                     width={"100%"}
                     height={"100%"}
                   />
-                </div>
-                <div className="basis-1/4 flex-1 p-4">
+                </motion.div>
+                <motion.div
+                  className="basis-1/4 flex-1 p-4"
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  transition={{ duration: 1.2 }}
+                  variants={{
+                    visible: { opacity: 1, y: 0 },
+                    hidden: { opacity: 0, y: 100 },
+                  }}
+                >
                   <Image
                     alt="Image"
                     src={website2}
@@ -427,8 +447,18 @@ export default function Home() {
                     width={"100%"}
                     height={"100%"}
                   />
-                </div>
-                <div className="basis-1/4 flex-1 p-4">
+                </motion.div>
+                <motion.div
+                  className="basis-1/4 flex-1 p-4"
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  transition={{ duration: 1.4 }}
+                  variants={{
+                    visible: { opacity: 1, y: 0 },
+                    hidden: { opacity: 0, y: 100 },
+                  }}
+                >
                   <Image
                     alt="Image"
                     src={website3}
@@ -436,8 +466,18 @@ export default function Home() {
                     width={"100%"}
                     height={"100%"}
                   />
-                </div>
-                <div className="basis-1/4 flex-1 p-4">
+                </motion.div>
+                <motion.div
+                  className="basis-1/4 flex-1 p-4"
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  transition={{ duration: 1.6 }}
+                  variants={{
+                    visible: { opacity: 1, y: 0 },
+                    hidden: { opacity: 0, y: 100 },
+                  }}
+                >
                   <Image
                     alt="Image"
                     src={website4}
@@ -445,8 +485,18 @@ export default function Home() {
                     width={"100%"}
                     height={"100%"}
                   />
-                </div>
-                <div className="basis-1/4 flex-1 p-4">
+                </motion.div>
+                <motion.div
+                  className="basis-1/4 flex-1 p-4"
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  transition={{ duration: 1.8 }}
+                  variants={{
+                    visible: { opacity: 1, y: 0 },
+                    hidden: { opacity: 0, y: 100 },
+                  }}
+                >
                   <Image
                     alt="Image"
                     src={website5}
@@ -454,8 +504,18 @@ export default function Home() {
                     width={"100%"}
                     height={"100%"}
                   />
-                </div>
-                <div className="basis-1/4 flex-1 p-4">
+                </motion.div>
+                <motion.div
+                  className="basis-1/4 flex-1 p-4"
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  transition={{ duration: 2 }}
+                  variants={{
+                    visible: { opacity: 1, y: 0 },
+                    hidden: { opacity: 0, y: 100 },
+                  }}
+                >
                   <Image
                     alt="Image"
                     src={website6}
@@ -463,7 +523,7 @@ export default function Home() {
                     width={"100%"}
                     height={"100%"}
                   />
-                </div>
+                </motion.div>
               </motion.div>
             </section>
           </main>
