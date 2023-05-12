@@ -40,6 +40,9 @@ function MainBanner({
           <h2 className="text-xl font-RalewayThin mt-3">
             Professional Web Developer
           </h2>
+          <h2 className="text-xl font-RalewayThin mt-3">
+            Full Stack Developer
+          </h2>
           <h4 className="text-sm font-RalewayItalic mt-3">
             "Learning Never Stop"
           </h4>
