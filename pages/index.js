@@ -27,7 +27,8 @@ import { motion, useScroll } from "framer-motion";
 import Banner from "./Banner";
 import design from "../public/design2.png";
 import code from "../public/code2.png";
-import qa from "../public/qa.png";
+import fs from "../public/fs.png";
+import ExperienceSection from "./ExperienceSection";
 
 export default function Home() {
   const [darkMode, SetDarkMode] = useState(false);
@@ -186,6 +187,7 @@ export default function Home() {
                 </motion.div>
               </div>
             </section>
+
             {/* About Section */}
             <section id="about">
               <div className="text-center  min-h-50">
@@ -230,6 +232,10 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+            </section>
+            {/* Experiences */}
+            <section id="experiences">
+              <ExperienceSection />
             </section>
             {/* Skill Section */}
             <motion.section
@@ -291,7 +297,10 @@ export default function Home() {
                   <p className="max-w-sm dark:text-gray-200">
                     Also Work as Backend Developer. Experience in
                     <span className="text-teal-500">
-                      ERP System And Ecommerce Websites
+                      {" "}
+                      <br></br>
+                      ERP System , Ecommerce Websites , School Management System
+                      , LMS and Portfolio Websites
                     </span>
                   </p>
                   <h2 className="text-teal-500 py-4">Language I Use</h2>
@@ -299,13 +308,13 @@ export default function Home() {
                     Php/Laravel
                   </p>
                   <p className="text-gray-600 py-1 dark:text-gray-300">
-                    Next Js / React Js
+                    NodeJs / ExpressJs
                   </p>
                   <p className="text-gray-600 py-1 dark:text-gray-300">
                     Wordpress
                   </p>
                 </div>
-                {/* QA */}
+                {/* FS */}
                 <motion.div
                   className="text-center shadow-lg rounded-lg my-6 p-10  mx-4 md:me-2 hover:shadow-gray-300 dark:bg-teal-800 dark:bg-opacity-50 dark:hover:shadow-teal-950"
                   initial="hidden"
@@ -318,20 +327,31 @@ export default function Home() {
                 >
                   <Image
                     alt="Image"
-                    src={qa}
+                    src={fs}
                     width={"auto"}
                     height={"150"}
                     className="mx-auto hover:scale-110"
                   />
                   <h2 className="font-RalewaySemiBold mt-4 mb-4 text-lg md:text-xl dark:text-gray-200">
-                    Quality Analysis
+                    Full-Stack Developer
                   </h2>
                   <p className="dark:text-gray-200">
-                    I Can Do Quality Analysis For Website And System.
+                    I am a Full-stack Developer proficient in both
+                  </p>
+                  <p>
+                    <span className="text-teal-500">
+                      Front-end and Back-end technologies.
+                    </span>
                   </p>
                   <h2 className="text-teal-500 py-4">Experience</h2>
                   <p className="text-gray-600 py-1 dark:text-gray-300">
-                    Fresher At Quality Analysis
+                    Freelance Full-Stack Developer
+                  </p>
+                  <p className="text-gray-600 py-1 dark:text-gray-300">
+                    Php / NodeJs / React Js
+                  </p>
+                  <p className="text-gray-600 py-1 dark:text-gray-300">
+                    MySQL/ PostgreSQL / MongoDB
                   </p>
                 </motion.div>
               </div>
@@ -398,6 +418,7 @@ export default function Home() {
                 </Banner>
               </div>
             </section>
+
             {/* Portfolio */}
             <section id="portfolio">
               <h1 className="font-RalewayLight text-xl text-teal-500 text-center my-6">
