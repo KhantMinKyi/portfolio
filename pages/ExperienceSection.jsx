@@ -2,11 +2,11 @@ import React from "react";
 
 function ExperienceSection() {
   return (
-    <div>
+    <div className=" relative">
       <h1 className="  flex justify-center text-xl md:text-2xl font-RalewayItalic py-5 text-teal-500">
         Experiences
       </h1>
-      <div className="md:h-96 bg-teal-100 grid md:grid-cols-3 justify-items-stretch font-RalewayThin overflow-hidden ">
+      <div className="md:h-96 bg-teal-100 grid md:grid-cols-3 justify-items-stretch font-RalewayThin overflow-hidden relative expandable-div-container">
         <div className="bg-teal-50 dark:bg-teal-500 expandable-div">
           <h1 className="text-xl font-RalewayBold mt-10 ml-4">
             MAVEN Technology Software House

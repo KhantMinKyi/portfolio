@@ -369,11 +369,12 @@ export default function Home() {
                       Team <b className="text-teal-400"> Work</b>
                     </h1>
                     <h6 className="font-RalewayItalic text-lg mt-10">
-                      Love To Work Group Projects . Actively Participate With
-                      Team
+                      Enthusiastic about group projects, I actively engage with
+                      my team, fostering collaboration and achieving collective
+                      GOALS.
                     </h6>
                     <h5 className="flex gap-4 items-center text-xl font-RalewayBold mt-10">
-                      Active Coder <AiOutlineLaptop />
+                      Passionate Coder <AiOutlineLaptop />
                     </h5>
                   </div>
                 </Banner>
@@ -386,13 +387,14 @@ export default function Home() {
                       </b>
                     </h1>
                     <h6 className="font-RalewayItalic text-lg mt-10">
-                      As a Backend Coder , Would Love To Think And Make
+                      I thrive on conceptualizing and implementing innovative
+                      and systematic solutions.
                       <b className="text-white dark:text-teal-300">
-                        A New Systematic and Creative Idea
+                        Passionate about systemizing solutions
                       </b>
-                      For Development
+                      and driving innovation in Development
                     </h6>
-                    <h5 className="flex gap-4 items-center text-xl font-RalewayBold mt-10">
+                    <h5 className="flex gap-4 items-center text-xl font-RalewayBold mt-4 md:mt-10">
                       Systematic Engineer <BsFillPuzzleFill />
                     </h5>
                   </div>
@@ -400,9 +402,9 @@ export default function Home() {
                 <Banner className="bg-teal-200 dark:bg-emerald-950">
                   <div className="my-auto dark:text-gray-100">
                     <h1 className="text-3xl font-RalewayBold mt-10">
-                      Progressive
+                      Progressive Learning &
                       <b className="text-lime-800 dark:text-lime-300">
-                        Learning
+                        Flexibility
                       </b>
                     </h1>
                     <h6 className="font-RalewayItalic text-md mt-10">
