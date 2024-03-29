@@ -201,15 +201,16 @@ export default function Home() {
                     </h1>
                     <ul className="list-none font-RalewayThin font-semibold max-w-lg mx-auto dark:text-gray-300">
                       <li className=" justify-center items-center p-2 text-sm">
-                        Since 2020 Starting Working as Freelancer for small
-                        Local Projects.
+                        Since the beginning of 2020, I embarked on my freelance
+                        journey, taking on a variety of small-scale local
+                        projects.
                       </li>
 
                       <TypeAnimation
                         sequence={[
-                          " From , I StartWorking In MAVEN Technology Software Hosue as Full-Stack Web Developer. Developing Many Wordpress Site and Laravel Websites.",
+                          " Later that year, I transitioned to a pivotal role at ROYAL MAVEN Technology Software House as a Full-Stack Web Developer. Here, my focus broadened as I delved into developing numerous WordPress sites and Laravel-based web applications, enriching my repertoire and honing my skills along the way.",
                           2000,
-                          "Develop a Laravel And React Website as a Freelancer.",
+                          " Additionally, I had the opportunity to independently develop a Laravel and React website as a freelancer, further expanding my expertise in modern web development technologies.",
                           2000,
                         ]}
                         speed={70}
